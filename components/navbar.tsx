@@ -28,7 +28,7 @@ export function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 px-4 pt-3">
       <div
         className={cn(
-          "max-w-7xl mx-auto rounded-full transition-all duration-300",
+          "max-w-7xl mx-auto rounded-md md:rounded-full transition-all duration-300",
           "bg-primary/95 backdrop-blur-md",
           "border border-white/30"
         )}
@@ -107,7 +107,7 @@ export function Navbar() {
                 key={link.href}
                 href={link.href}
                 className={cn(
-                  "py-2.5 px-4 text-sm font-medium transition-colors rounded-lg",
+                  "py-2.5 px-4 text-center text-sm font-medium transition-colors",
                   isActive(link.href)
                     ? "text-primary-foreground bg-primary-foreground/10"
                     : "text-primary-foreground/80 hover:text-primary-foreground hover:bg-primary-foreground/5"
@@ -120,7 +120,7 @@ export function Navbar() {
             <Link href="/login" onClick={() => setIsOpen(false)}>
               <Button
                 variant="ghost"
-                className="w-full text-primary-foreground hover:bg-primary-foreground/10 gap-2 justify-start mt-2 rounded-lg"
+                className="w-full text-primary-foreground hover:bg-primary-foreground/10 gap-2 md:justify-start mt-2 rounded-lg"
               >
                 <User className="w-4 h-4" />
                 Login

@@ -79,7 +79,7 @@ export function CourseCard({
           )}
         </div>
         <Link href={href}>
-          <Button size="sm" className="bg-primary hover:bg-primary/90 text-primary-foreground">
+          <Button className="btn btn-md bg-primary hover:bg-primary/90 text-primary-foreground">
             {variant === "test" ? "Enroll Test" : "Enroll Now"}
           </Button>
         </Link>

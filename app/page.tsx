@@ -179,7 +179,7 @@ export default function HomePage() {
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-8 items-center">
+          <div className="flex justify-between flex-col md:flex-row items-center">
             <div>
               <p className="text-primary-foreground/80 text-sm md:text-base mb-4">
                 Study Smart, Achieve More
@@ -200,19 +200,19 @@ export default function HomePage() {
                   Start Learning
                   <ArrowRight className="w-4 h-4" />
                 </Button>
-                <Button
+                {/* <Button
                   size="lg"
                   variant="outline"
                   className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10"
                 >
                   Take a Model Test
-                </Button>
+                </Button> */}
               </div>
             </div>
-            <div className="hidden lg:flex justify-end">
+            <div className="flex justify-end">
               <div className="relative w-full max-w-md">
                 <Image
-                  src="/images/hero-students.jpg"
+                  src="/images/hero.png"
                   alt="Students with books"
                   width={500}
                   height={400}
