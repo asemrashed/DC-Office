@@ -47,7 +47,7 @@ export function Navbar() {
             {/* Logo */}
             <Link href="/" className="flex items-center gap-2">
               <span className="text-2xl font-bold text-primary-foreground tracking-tight">
-                lex<span className="font-light">plain</span>
+                Edu<span className="font-light">Learn</span>
               </span>
             </Link>
 
